@@ -15,7 +15,7 @@ class Login extends Component {
    }
    onSubmit = (e) => {
       e.preventDefault();
-      if (this.state.username == "admin" && this.state.password == "admin123") {
+      if (this.state.username === "admin" && this.state.password === "admin123") {
          this.setState({ username: '', password: '', isLogged: true });
       } else {
          alert("Las credenciales no són validas");
